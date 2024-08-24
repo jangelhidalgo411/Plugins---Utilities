@@ -11,44 +11,44 @@
 <button class="btn btn-secondary copybutton" id="copybutton"><i class="fa-regular fa-copy copybutton"></i></button>
 <pre class="code">
 <code class="w-100 h-100">
-  <span class="js-comment">/*
+  <span class="gray-text">/*
    * This is the global function to toggle the Field.
   */</span>
-  <span class="js-global">function</span> <span class="js-function">DropdownToggleField</span>(<span class="js-parameter">value</span>) {
-    <span class="js-comment">/* We use a switch statement in case
+  <span class="blue-text">function</span> <span class="green-text">DropdownToggleField</span>(<span class="orange-text">value</span>) {
+    <span class="gray-text">/* We use a switch statement in case
      * the are other case to show the field
      * you can added easily
     */</span>
-    <span class="js-simbol">switch</span>(value) {
-      <span class="js-simbol">case</span> <span class="js-string">'Yes'</span>:
-        <span class="js-comment">//We make the field required</span>
-        <span class="js-simbol">$</span>(<span class="js-string">'#SpecialCode'</span>).<span class="js-global">attr</span>(<span class="js-string">"required"</span>, <span class="js-textString">true</span>);
-        <span class="js-comment">//We make the field visible</span>
-        <span class="js-simbol">$</span>(<span class="js-string">'#SpecialCode'</span>).<span class="js-global">parent</span>().<span class="js-global">parent</span>().<span class="js-global">show</span>();
-        <span class="js-simbol">break</span>;
-      <span class="js-simbol">default</span>:
-        <span class="js-comment">//We remove the required attribute from the field</span> 
-        <span class="js-simbol">$</span>(<span class="js-string">'#SpecialCode'</span>).<span class="js-global">removeAttr</span>(<span class="js-string">"required"</span>);
-        <span class="js-comment">//We make the field NOT visible</span>
-        <span class="js-simbol">$</span>(<span class="js-string">'#SpecialCode'</span>).<span class="js-global">parent</span>().<span class="js-global">parent</span>().<span class="js-global">hide</span>();
-        <span class="js-comment">//We empty the value to avoid trash data</span>
-        <span class="js-simbol">$</span>(<span class="js-string">'#SpecialCode'</span>).<span class="js-global">val</span>(<span class="js-string">''</span>);
-        <span class="js-simbol">break</span>;
+    <span class="pink-text">switch</span>(value) {
+      <span class="pink-text">case</span> <span class="yellow-text">'Yes'</span>:
+        <span class="gray-text">//We make the field required</span>
+        <span class="pink-text">$</span>(<span class="yellow-text">'#SpecialCode'</span>).<span class="blue-text">attr</span>(<span class="yellow-text">"required"</span>, <span class="purple-text">true</span>);
+        <span class="gray-text">//We make the field visible</span>
+        <span class="pink-text">$</span>(<span class="yellow-text">'#SpecialCode'</span>).<span class="blue-text">parent</span>().<span class="blue-text">parent</span>().<span class="blue-text">show</span>();
+        <span class="pink-text">break</span>;
+      <span class="pink-text">default</span>:
+        <span class="gray-text">//We remove the required attribute from the field</span> 
+        <span class="pink-text">$</span>(<span class="yellow-text">'#SpecialCode'</span>).<span class="blue-text">removeAttr</span>(<span class="yellow-text">"required"</span>);
+        <span class="gray-text">//We make the field NOT visible</span>
+        <span class="pink-text">$</span>(<span class="yellow-text">'#SpecialCode'</span>).<span class="blue-text">parent</span>().<span class="blue-text">parent</span>().<span class="blue-text">hide</span>();
+        <span class="gray-text">//We empty the value to avoid trash data</span>
+        <span class="pink-text">$</span>(<span class="yellow-text">'#SpecialCode'</span>).<span class="blue-text">val</span>(<span class="yellow-text">''</span>);
+        <span class="pink-text">break</span>;
     }
   }
 
 
-  <span class="js-comment">//We are trigger the validation every time the dropdown change</span>
-  <span class="js-simbol">$</span>(<span class="js-string">'#HaveSpecialCode'</span>).<span class="js-global">change</span>(<span class="js-global">function</span>(<span class="js-parameter">event</span>) {
-    <span class="js-comment">//We send to the function the current value</span>
-    <span class="js-global">DropdownToggleField</span>(<span class="js-simbol">$</span>(<span class="js-parameter">this</span>).<span class="js-global">val</span>());
+  <span class="gray-text">//We are trigger the validation every time the dropdown change</span>
+  <span class="pink-text">$</span>(<span class="yellow-text">'#HaveSpecialCode'</span>).<span class="blue-text">change</span>(<span class="blue-text">function</span>(<span class="blue-text">event</span>) {
+    <span class="gray-text">//We send to the function the current value</span>
+    <span class="blue-text">DropdownToggleField</span>(<span class="pink-text">$</span>(<span class="orange-text">this</span>).<span class="blue-text">val</span>());
   });
   
-  <span class="js-comment">/*
+  <span class="gray-text">/*
    * We send to the function the initial value when page load in case that
    * the information came from any storage system.
   */</span>
-  <span class="js-global">DropdownToggleField</span>(<span class="js-simbol">$</span>(<span class="js-string">'#HaveSpecialCode'</span>).<span class="js-global">val</span>());
+  <span class="blue-text">DropdownToggleField</span>(<span class="pink-text">$</span>(<span class="yellow-text">'#HaveSpecialCode'</span>).<span class="blue-text">val</span>());
 </code>
 </pre>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>

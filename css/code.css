@@ -14,43 +14,40 @@ pre {
 	margin: 0; 
 }
 
-.copybutton {
-    float: right;
-    position: sticky;
-	top: 1rem;
+.overflow-y-0 {
+	overflow-y: hidden;
 }
 
-.code span.js-global,
-.code span.css-property {
+.copybutton {
+    position: sticky;
+	top: 3%;
+	left: 97%;
+}
+
+.code span.blue-text {
 	color: #0d70cc;
 }
 
-.code span.js-comment {
+.code span.gray-text {
 	color: #7c7a7a;
 }
 
-.code span.js-parameter {
+.code span.orange-text {
 	color: #f48108;
 }
 
-.code span.js-function,
-.code span.html-attribute,
-.code span.css-class {
+.code span.green-text {
 	color: #73a733;
 }
 
-.code span.js-string,
-.code span.html-value,
-.code span.css-text {
+.code span.yellow-text {
 	color: #fffa97;
 }
 
-.code span.js-textString {
+.code span.purple-text {
 	color: #bd72c8;
 }
 
-.code span.js-simbol,
-.code span.html-tag,
-.code span.css-tag {
+.code span.pink-text {
 	color: #d21d5e;
 }
