@@ -3,6 +3,15 @@
 	height: 20rem;
 }
 
+.iframe-1-line {
+	height: 4rem !important;
+}
+
+
+.iframe-3-line {
+	height: 6rem !important;
+}
+
 label {
 	text-align: left;
 }

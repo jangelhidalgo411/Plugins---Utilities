@@ -1,4 +1,9 @@
 /*
+ * disabled rigth click
+*/
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+/*
  * This is the global function to capitalize. We get 2 values:
  * - text     => the text we are going to capitalize
  * - spliter  => the character we are going to use to convert text into array
@@ -45,7 +50,7 @@ $(document).ready(function() {
 	 * - keyup:  when any key is press and the input is focus
 	 * - input:  when something is inserted
 	*/
-	$('#Capitilize').bind("keyup input",function() {
+	$('#Camelcase').bind("keyup input",function() {
 		//we get the current value 
 		var text = $(this).val();
 
