@@ -1,0 +1,56 @@
+
+body,
+.code {
+	background: #1f1f1f;
+	color: #ffffff;
+	font-weight: bold;
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+	user-select: none; /* Standard syntax */
+}
+
+body,
+pre {
+	margin: 0; 
+}
+
+.copybutton {
+    float: right;
+    position: sticky;
+	top: 1rem;
+}
+
+.code span.js-global,
+.code span.css-property {
+	color: #0d70cc;
+}
+
+.code span.js-comment {
+	color: #7c7a7a;
+}
+
+.code span.js-parameter {
+	color: #f48108;
+}
+
+.code span.js-function,
+.code span.html-attribute,
+.code span.css-class {
+	color: #73a733;
+}
+
+.code span.js-string,
+.code span.html-value,
+.code span.css-text {
+	color: #fffa97;
+}
+
+.code span.js-textString {
+	color: #bd72c8;
+}
+
+.code span.js-simbol,
+.code span.html-tag,
+.code span.css-tag {
+	color: #d21d5e;
+}

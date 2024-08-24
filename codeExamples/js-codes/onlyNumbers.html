@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OnlyNumers</title>
+  <link rel="stylesheet" type="text/css" href="../../css/app.css">
+  <link rel="stylesheet" type="text/css" href="../../css/code.css">
+</head>
+  <body>
+<button class="btn btn-secondary copybutton" id="copybutton"><i class="fa-regular fa-copy copybutton"></i></button>
+
+<pre class="code">
+<code class="w-100 h-100">
+  <span class="js-simbol">$</span>(<span class="js-global">document</span>).<span class="js-global">ready</span>(<span class="js-global">function</span>() {  
+    <span class="js-comment">/*
+     * We bind the trigger on page fully load
+     * we are trigger whern the input with id "alphanumeric":
+     * - keyup:  when any key is press and the input is focus
+     * - input:  when something is inserted
+    */</span>
+    <span class="js-simbol">$</span>(<span class="js-string">'#AlphaNumeric'</span>).<span class="js-global">bind</span>(<span class="js-string">"keyup input"</span>,<span class="js-global">function</span>() {
+
+    <span class="js-comment">//we get the current value</span> 
+    <span class="js-global">var</span> text <span class="js-simbol">=</span> <span class="js-simbol">$</span>(<span class="js-parameter">this</span>).<span class="js-global">val</span>();
+
+    <span class="js-comment">/*With regex we remove all not allowed character  
+       * by replacing them with nothing
+    */</span>
+    <span class="js-global">var</span> text <span class="js-simbol">=</span> <span class="js-simbol">$</span>(<span class="js-parameter">this</span>).<span class="js-global">val</span>().<span class="js-global">replace</span>(<span class="js-string">/</span><span class="js-textString">[</span><span class="js-simbol">^</span><span class="js-textString">0-9]</span><span class="js-string">/</span><span class="js-simbol">gi</span>,<span class="js-string">''</span>);
+
+    <span class="js-comment">//we replace the old value with the new value</span>
+    <span class="js-simbol">$</span>(<span class="js-parameter">this</span>).<span class="js-global">val</span>(text)
+  });
+</code>
+</pre>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5c48e2b7be.js" crossorigin="anonymous"></script>
+  <script src="../../js/app.js"></script>  
+  </body>
+</html>
