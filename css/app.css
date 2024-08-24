@@ -1,0 +1,12 @@
+.iframe-code {
+	width: 100%;
+	height: 20rem;
+}
+
+label {
+	text-align: left;
+}
+
+input[required="required"] {
+	border-color: red;
+}
